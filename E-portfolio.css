@@ -240,14 +240,14 @@ nav {
     position: absolute;
     inset: 0;
     height: 100%;
-    background-color: #1c1d25;
+    background-color: #0f1020;
     opacity: 0;
     transition: opacity 450ms ease;
     z-index: 1;
 }
 
 .project__wrapper:hover::before {
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .project:hover .project__img {
@@ -273,11 +273,6 @@ nav {
     opacity: 0;
     text-align: left;
     transition: opacity 450ms ease, transform 450ms ease;
-    .project__description--title,
-    .project__description--sub-title,
-    .project__description--para,
-    .project__description--link, 
-     color: #ffff;
 }
 
 
@@ -295,5 +290,3 @@ nav {
     text-decoration: none;
     transition: opacity 450ms ease, transform 450ms ease;
 }
-
-
