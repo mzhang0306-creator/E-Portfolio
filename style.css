@@ -28,6 +28,11 @@ p {
 a {
     text-decoration: none;
     position: relative;
+    transition: opacity 300ms ease;
+}
+
+i :hover {
+    opacity: 0.7;
 }
 
 .link__hover-effect:after {
@@ -45,7 +50,7 @@ a {
     background-color: white;
 }
 
-link__hover-effect--black:after {
+.link__hover-effect--black:after {
     background-color: black;
 }
 .link__hover-effect:hover:after {
@@ -141,7 +146,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: content;
+    align-items: center;
     width: 100%;
 }
 
@@ -214,11 +219,11 @@ nav {
 @keyframes fade-up {
     0% {
         opacity: 0;
-        transform: translateY(0);
+        transform: translateY(40);
     }
     100% {
         opacity: 1;
-        transform: translateY(40px);
+        transform: translateY(0);
     }
 }
 
@@ -240,6 +245,23 @@ nav {
     }
     100% {
         opacity: 1;
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite;
+}
+
+@keyframes animate-wave {
+    0%  {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0)
     }
 }
 
@@ -382,7 +404,7 @@ nav {
 .project__description--subtitle,
 .project__description--para,
 .project__description--link, {
-  text-align: left;
+  text-align left
 }
 
 /* FOOTER */
